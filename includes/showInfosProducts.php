@@ -2,7 +2,7 @@
 {
     if (isset($product1)) {
         echo "
-    <p>Prix HT : " . $product1->getPrixHT($prixHT) . "</p>
+    <p>Prix HT : " . $product1->getPrixHT() . "</p>
     <p>TVA : " . $product1->tva . "</p>
     <p>TTC : " . $product1->prixTTC . "</p>
     <p>Nom : " . $product1->nom . "</p>
