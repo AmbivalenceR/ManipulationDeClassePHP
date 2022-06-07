@@ -28,4 +28,19 @@ class Product
     {
         return "Valorisation du stock : " . number_format(($this->stock * $this->prixHT), 2) . " €";
     }
+
+    function showInfosProducts()
+    {
+        if (isset($this)) {
+            echo "
+    <p>Prix HT : " . $this->getPrixHT() . "</p>
+    <p>TVA : " . $this->tva . "</p>
+    <p>TTC : " . $this->prixTTC . "</p>
+    <p>Nom : " . $this->nom . "</p>
+    <p>Catégorie : " . $this->categorie . "</p>
+    <p>Stock : " . $this->stock . "</p>
+    <p>Description : " . $this->description . "</p>
+    <p>" . $this->valorisationStock() . "</p>";
+        }
+    }
 }
