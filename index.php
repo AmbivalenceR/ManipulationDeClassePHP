@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . "/classes/product.class.php";
+include __DIR__ . "/includes/showInfosProducts.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -34,15 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="description" placeholder="Description">
         <button type="submit">Enregistrer</button>
     </form>
-    <?php if (isset($product1)) { ?>
-        <p>Prix HT : <?= $product1->prixHT ?></p>
-        <p>Tva : <?= $product1->tva ?></p>
-        <p>TTC : <?= $product1->prixTTC ?></p>
-        <p>Nom : <?= $product1->nom ?></p>
-        <p>Catégorie : <?= $product1->categorie ?></p>
-        <p>Stock : <?= $product1->stock ?></p>
-        <p>Description : <?= $product1->description ?></p>
-    <?php } ?>
+    <?= showInfosProducts($product1, $prixHT); ?>
 </body>
 
 </html>

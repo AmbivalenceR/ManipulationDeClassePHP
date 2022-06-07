@@ -1,7 +1,7 @@
 <?php
 class Product
 {
-    public float $prixHT;
+    protected float $prixHT;
     public float $tva;
     public float $prixTTC;
     public string $nom;
@@ -17,5 +17,15 @@ class Product
         $this->categorie = $categorie;
         $this->stock = $stock;
         $this->description = $description;
+    }
+
+    public function getPrixHT()
+    {
+        return number_format($this->prixHT, 2) . " €";
+    }
+
+    public function valorisationStock()
+    {
+        return "Valorisation du stock : " . number_format(($this->stock * $this->prixHT), 2) . " €";
     }
 }
