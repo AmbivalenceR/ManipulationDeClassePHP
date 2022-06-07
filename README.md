@@ -38,3 +38,20 @@ Lorsque la classe fonctionne correctement, ajoutez un formulaire sur la page per
 
 Dans le fichier index.php, si la requête a été effecutée avec le verbe POST, récupérez le contenu de la requête (provenant du formulaire) et utilisez le pour créer un nouvel objet produit. Ensuite, affichez les informations du nouveau produit en dessous du formulaire.
 
+
+
+V2 
+
+Objectifs:
+Utiliser les concepts de bases de l'OOP
+Créer des classes
+Créer des objets
+Ajouter des méthodes
+ 
+
+Sujet:
+Dans cette deuxième partie, vous devrez modifier la classe Product en ajoutant ou modifiant les éléments suivants:
+
+Ajoutez une une méthode retournant la valorisation du stock (stock * prix HT)
+Les propriétés de prix doivent être en visibilité protected. Lorsqu'on lit ces propriétés depuis l'objet, le symbole € doit apparaitre derrière le prix. Lorsqu'on les modifie, la conversion en nombre à virgule doit être automatique avant le stockage et la valeur devra être stockée uniquement si elle est supérieure ou égale à 0.
+Ajouter une méthode permettant d'afficher toutes les informations du produit sur la page.
