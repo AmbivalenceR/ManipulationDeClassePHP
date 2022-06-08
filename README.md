@@ -55,3 +55,18 @@ Dans cette deuxième partie, vous devrez modifier la classe Product en ajoutant 
 Ajoutez une une méthode retournant la valorisation du stock (stock * prix HT)
 Les propriétés de prix doivent être en visibilité protected. Lorsqu'on lit ces propriétés depuis l'objet, le symbole € doit apparaitre derrière le prix. Lorsqu'on les modifie, la conversion en nombre à virgule doit être automatique avant le stockage et la valeur devra être stockée uniquement si elle est supérieure ou égale à 0.
 Ajouter une méthode permettant d'afficher toutes les informations du produit sur la page.
+
+V3
+
+Dans cette troisème partie, vous devrez créer un système de clonage de produit.
+
+Pour cela, créez une méthode statique prenant en paramètre:
+
+l'objet produit à dupliquer
+le nom du clone à fabriquer
+Cette méthode devra créer une nouvelle instance de la classe produit avec les contraintes suivantes:
+
+Le nom devra être celui récupéré en paramètre
+La description devra être vide
+Les autres propriété deront être reprises depuis l'objet à cloner
+La méthode statique devra retourner le nouvel objet.
