@@ -1,7 +1,7 @@
 # ManipulationDeClassePHP
 
 
-#V1 / Utiliser les concepts de bases de l'OOP / Créer des classes / Créer des objets
+##V1 / Utiliser les concepts de bases de l'OOP / Créer des classes / Créer des objets
  
 Sujet:
 Dans cet atelier suivi, vous allez développer un backoffice pour un commerçant lui permettant de saisir des produits qu'il souhaite mettre en vente.
@@ -25,7 +25,7 @@ Lorsque la classe fonctionne correctement, ajoutez un formulaire sur la page per
 Dans le fichier index.php, si la requête a été effecutée avec le verbe POST, récupérez le contenu de la requête (provenant du formulaire) et utilisez le pour créer un nouvel objet produit. Ensuite, affichez les informations du nouveau produit en dessous du formulaire.
 
 
-#V2 / Utiliser les concepts de bases de l'OOP / Créer des classes / Créer des objets / Ajouter des méthodes
+##V2 / Utiliser les concepts de bases de l'OOP / Créer des classes / Créer des objets / Ajouter des méthodes
 
 Sujet:
 Dans cette deuxième partie, vous devrez modifier la classe Product en ajoutant ou modifiant les éléments suivants:
@@ -35,7 +35,7 @@ Les propriétés de prix doivent être en visibilité protected. Lorsqu'on lit c
 Ajouter une méthode permettant d'afficher toutes les informations du produit sur la page.
 
 
-#V3 / Créer des méthodes statiques
+##V3 / Créer des méthodes statiques
 
 Sujet:
 Dans cette troisème partie, vous devrez créer un système de clonage de produit.
@@ -52,7 +52,7 @@ Les autres propriété deront être reprises depuis l'objet à cloner
 La méthode statique devra retourner le nouvel objet.
 
 
-#V4 / Utiliser l'héritage
+##V4 / Utiliser l'héritage
 
 Sujet:
 Dans cette partie, vous devrez créer différent types de produits basés sur un modèle de produit principal.
@@ -76,7 +76,7 @@ bloquez la TVA à 20%
 surchargez la méthode d'affichage des données du produits pour qu'elle affiche toutes les propriétés du produit
 
 
-#V5 / Utiliser les classes abstraites / Utilises les interfaces
+##V5 / Utiliser les classes abstraites / Utilises les interfaces
 
 Sujet:
 Dans cette partie, vous allez apporter des améliorations à vos classes.
@@ -86,7 +86,7 @@ La classe Product n'étant pas à instancier directement, transformez la en clas
 Ensuite créez une interface IProduct contenant les méthodes publiques de la classe Product et implémentez cette interface sur cette même classe.
 
 
-#V6 / Utiliser les espaces de nom
+##V6 / Utiliser les espaces de nom
 
 Dans cette partie, vous allez finaliser votre application. Pour cela, ajouter vos classes à un namespace au nom de votre choix et effectuez les modifications nécessaires pour que l'application fonctionne. 
 
